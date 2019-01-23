@@ -1,5 +1,7 @@
 # laravel-mongodb-starter
 
+![](https://i.imgur.com/Uw0cekD.png)
+
 ## Installation (For WAMP)  :
 
 1. Install MongoDB [Click Here](https://www.mongodb.com/download-center/community?jmp=docs)
