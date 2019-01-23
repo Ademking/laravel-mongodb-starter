@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <br>
+	<h1 class="text-center">🚀 Demo</h1>
+	<h2 class="text-center">Angular + Laravel + MongoDB</h2>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <h3>➕ ADD USER</h3>
+      <form id="addUser" action="" autocomplete="off">
+        <div class="form-group">
+          <input class="form-control" type="text" name="username" placeholder="Username" [(ngModel)]="username" required>
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="password" name="password" placeholder="Password" [(ngModel)]="password" required>
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="text" name="email" placeholder="E-mail" [(ngModel)]="email" required>
+        </div>
+        <button class="btn btn-primary form-control" (click)="add()">SUBMIT</button>
+		<div><br></div>
+		<button class="btn btn-danger form-control" (click)="deleteAll()">DELETE ALL</button>
+      </form>
+    </div>
+    <div class="col-md-8">
+      <h3>👥 USERS</h3>
+      <table id="userTable" class="table table-striped">
+        <tr>
+          <th class="col-md-2">🏃‍♂️ Username</th>
+          <th class="col-md-6">📧 Email</th>
+        </tr>
+		<ng-container *ngFor="let user of users">
+			<tr>
+				<td class="col-md-2" name="name">{{user.username}}</td>
+				<td class="col-md-6" name="address">{{user.email}}</td>
+			</tr>
+		</ng-container>
+      </table>
+    </div>
+  </div>
+</div>
