@@ -4,27 +4,33 @@
 
 ## Installation (For WAMP)  :
 
-1. Install MongoDB [Click Here](https://www.mongodb.com/download-center/community?jmp=docs)
+1. Download this repo : [Click Here](https://github.com/Ademking/laravel-mongodb-starter/archive/master.zip)
 
-2. Download MongoDB PHP extension for wamp : 
+2. Extract the zip file
+
+3. Open "client" folder and run this command ===> __npm install__
+
+4. Open "server" folder and run this command ===> __composer install__
+
+5. Install MongoDB [Click Here](https://www.mongodb.com/download-center/community?jmp=docs)
+
+6. Download MongoDB PHP extension for wamp : 
    
    * Open this link : [Click Here](https://www.mongodb.com/download-center/community?jmp=docs)
    
    * In "DLL List" section, select your version (must be thread safe) - *exemple: PHP 7.1 Thread Safe (TS) x64*
    
-3. Extract zip file and move "php_mongodb.dll" to Wamp extensions folder
+7. Extract zip file and move "php_mongodb.dll" to Wamp extensions folder
 
     * C:\wamp64\bin\php\php_VERSION\ext
 
-4. In your wamp, Open "php.ini" , Search for " Windows Extensions ", and add this line : 
+8. In your wamp, Open "php.ini" , Search for " Windows Extensions ", and add this line : 
  
     * > extension=php_mongodb.dll
    
-5. Restart your apache server... and check if extension is loaded
-
-    * in CMD, run :  php -m
+9. Restart your apache server... and check if mongodb exists in the list, run ===> __php -m__
     
-    * Check if mongodb exists
+    
 
 ## NOTES
 
